@@ -25,7 +25,6 @@ export default function Map() {
     setPinnedLocation(null);
   };
 
-  // Fungsi buat munculin popup Mapbox di atas marker
   const showLocationPopup = useCallback((lng: number, lat: number, city: string, place: string) => {
     if (!mapRef.current) return;
     if (popupRef.current) popupRef.current.remove();

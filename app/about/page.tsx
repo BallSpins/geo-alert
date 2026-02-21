@@ -74,23 +74,17 @@ export default function About() {
             <div className="flex flex-col md:flex-row items-center gap-10 relative z-10">
               {/* Profile Image / Placeholder */}
               <div className="w-32 h-32 bg-linear-to-tr from-blue-600 to-indigo-600 rounded-full flex items-center justify-center text-4xl font-bold border-4 border-zinc-800 shrink-0 shadow-2xl">
-                GA
+                Geo
               </div>
               
               <div className="flex-1 text-center md:text-left">
                 <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-                  This project was developed as a smart solution for geographic information management. I focus on integrating AI with interactive maps to deliver meaningful and actionable user experiences.
+                  This project was developed as a smart solution for geographic information management. I build things that work. This project is part of my exploration into Gemini AI and real-time data processing.
                 </p>
                 
                 <div className="flex flex-wrap justify-center md:justify-start gap-4">
-                  <a href="https://github.com/your-username" target="_blank" className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-5 py-2.5 rounded-xl transition-all border border-zinc-700 group">
+                  <a href="https://github.com/BallSpins" target="_blank" className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-5 py-2.5 rounded-xl transition-all border border-zinc-700 group">
                     <Github size={20} /> Github <ExternalLink size={14} className="text-zinc-500 group-hover:text-white transition-colors" />
-                  </a>
-                  <a href="https://linkedin.com/in/your-username" target="_blank" className="flex items-center gap-2 bg-blue-600 hover:bg-blue-500 px-5 py-2.5 rounded-xl transition-all">
-                    <Linkedin size={20} /> LinkedIn
-                  </a>
-                  <a href="mailto:your-email@example.com" className="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-5 py-2.5 rounded-xl transition-all border border-zinc-700">
-                    <Mail size={20} /> Email
                   </a>
                 </div>
               </div>
