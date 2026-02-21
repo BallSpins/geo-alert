@@ -150,26 +150,29 @@ export default function Map() {
   return (
     <div className="w-full h-full relative overflow-hidden">
       <div ref={mapContainer} className="w-full h-full" />
-      <SearchBar onSearch={onSearch} isSearching={isSearching} />
 
-      <button 
-        onClick={locateUser}
-        className="absolute top-20 right-6 lg:left-6 w-10 h-10 bg-zinc-900 border border-white/10 rounded-xl flex items-center justify-center text-white shadow-xl hover:bg-zinc-800 transition-all z-40 active:scale-95"
-        title="Find My Location"
-      >
-        <MapPin size={18} className="text-blue-500" />
-      </button>
+      <div className="absolute inset-0 pointer-events-none z-50">
+        <SearchBar onSearch={onSearch} isSearching={isSearching} />
 
-      {pinnedLocation && (
-        <AnalysisCard 
-          data={pinnedLocation} 
-          onDismiss={() => { 
-            markerRef.current?.remove(); 
-            popupRef.current?.remove(); 
-            setPinnedLocation(null); 
-          }} 
-        />
-      )}
+        <button 
+          onClick={locateUser}
+          className="absolute top-20 right-6 lg:left-6 w-10 h-10 bg-zinc-900 border border-white/10 rounded-xl flex items-center justify-center text-white shadow-xl hover:bg-zinc-800 transition-all z-50 active:scale-95"
+          title="Find My Location"
+        >
+          <MapPin size={18} className="text-blue-500" />
+        </button>
+
+        {pinnedLocation && (
+          <AnalysisCard 
+            data={pinnedLocation} 
+            onDismiss={() => { 
+              markerRef.current?.remove(); 
+              popupRef.current?.remove(); 
+              setPinnedLocation(null); 
+            }} 
+          />
+        )}
+      </div>
     </div>
   );
 }
