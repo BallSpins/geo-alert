@@ -1,5 +1,85 @@
 @import "tailwindcss";
 
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Remove default white */
+.mapboxgl-popup-content {
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+.mapboxgl-popup-tip {
+  display: none !important;
+}
+
+/* Custom popup card */
+.popup-card {
+  background: rgba(24, 24, 27, 0.95);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  padding: 14px 16px;
+  border-radius: 16px;
+  min-width: 220px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.mapboxgl-popup-close-button {
+  right: 8px !important;
+  top: 8px !important;
+  font-size: 16px !important;
+  color: #a1a1aa !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px !important;
+}
+
+.mapboxgl-popup-close-button:hover {
+  color: #f87171 !important;
+}
+
+.mapboxgl-popup {
+  z-index: 9999 !important;
+}
+
+.popup-title {
+  color: #f87171;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.popup-place {
+  color: #a1a1aa;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.popup-coord {
+  color: #71717a;
+  font-size: 11px;
+  margin-top: 8px;
+  font-family: monospace;
+}
+
+.geo-popup {
+  animation: popup-fade 0.2s ease-out;
+}
+
+@keyframes popup-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
