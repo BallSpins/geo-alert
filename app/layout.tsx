@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GeoAlert",
     description: "AI-driven real-time disaster risk analysis and early warning system.",
-    url: "https://geo-alert-ballspins.vercel.app",
+    url: "https://geo-alert-one.vercel.app",
     siteName: "GeoAlert",
     images: [
       {
