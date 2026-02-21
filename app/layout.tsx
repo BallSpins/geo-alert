@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     locale: "id_ID",
     type: "website",
   },
+  other: {
+    "dicoding:email": "f7629118@gmail.com",
+  },
 };
 
 export default function RootLayout({
