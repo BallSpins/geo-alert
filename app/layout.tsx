@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "GeoAlert | Disaster Risk Analysis",
   description: "AI-powered disaster early warning system utilizing Gemini risk assessment.",
-  keywords: ["disaster", "risk analysis", "gemini ai", "nextjs", "mapbox", "early warning"],
+  keywords: ["disaster", "risk analysis", "gemini ai", "nextjs", "mapbox", "early warning", "gempa", "bmkg"],
   authors: [{ name: "BallSpins" }],
   openGraph: {
     title: "GeoAlert",
